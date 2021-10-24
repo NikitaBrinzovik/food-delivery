@@ -160,14 +160,17 @@ body {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  margin: -20px;
 }
 .card {
+  flex: 50%;
+  margin: 20px;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   border-radius: 20px;
   padding: 32px;
-  min-width: 570px;
+  max-width: 570px;
   min-height: 380px;
   display: flex;
   flex-direction: column;
