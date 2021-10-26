@@ -100,6 +100,39 @@ body {
   background: #fff;
   color: #5f5f61;
 }
+
+.button-outline {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 15px 25px;
+  border: 2px solid #f37321;
+  box-sizing: border-box;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+}
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button {
+  cursor: pointer;
+}
+
 /* ---------------------slider----------------------------- */
 .slide {
   position: relative;
@@ -108,8 +141,6 @@ body {
   display: flex;
   align-items: center;
   padding: 100px;
-
-  /* чтоб спрятать то, что выпирает (тут уголки из-за скругления): */
   overflow: hidden;
 }
 .slide-text-light {
@@ -118,7 +149,7 @@ body {
 }
 .slide-content {
   position: relative;
-  min-width: 400px;
+  min-width: 500px;
 }
 .slide-title {
   margin-top: 0;
@@ -152,6 +183,10 @@ body {
     rgba(0, 0, 0, 0.43) 40.45%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.swiper {
+  position: relative;
 }
 
 /*------------------------- promo -----------------------*/
@@ -233,4 +268,241 @@ body {
   height: 100%;
   z-index: -2;
   object-fit: cover;
+}
+
+/* -------------------------Секция доставки ----------------------------*/
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.delivery-week {
+  padding: 100px 0;
+}
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 15px;
+}
+.delivery-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border-radius: 30px;
+
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+.tag-health {
+  background-color: #d0fd89;
+  color: #49494f;
+}
+.tag-vej {
+  background-color: #aebc41;
+  color: #fff;
+}
+.tag-meat {
+  background-color: #b86b78;
+  color: #fff;
+}
+.tag-chick-chirik {
+  background-color: #d68334;
+  color: #fff;
+}
+.tag-fish {
+  background-color: #cd6255;
+  color: #fff;
+}
+.tag-kids {
+  background-color: #fffdbf;
+  color: #49494f;
+}
+.tag-home-made {
+  background-color: #f6fdc8;
+  color: #49494f;
+}
+.tag-selebration {
+  background-color: #fef7fe;
+  color: #49494f;
+}
+
+/* ------------------Категории блюд -------------------*/
+
+.section-grey {
+  background: #f6f6f6;
+}
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 62px;
+}
+.tabs-link {
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #49494f;
+  margin-right: 58px;
+}
+.tabs-link.active {
+  color: #f37321;
+}
+.tabs-content {
+  display: flex;
+  margin: -15px;
+}
+.tabs-card {
+  margin: 15px;
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.tabs-img {
+  max-width: 100%;
+}
+.tabs-card-content {
+  padding: 23px;
+}
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.tabs-discription {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  margin-bottom: 5px;
+  display: block;
+}
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+
+/* -----------------------footer--------------------- */
+
+.footer {
+  background: #f6f6f6;
+  padding: 40px 0;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 50px;
+}
+.footer-link {
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000;
+  margin-right: 50px;
+}
+.social-link {
+  /* display: flex; */
+  align-items: center;
+  margin-left: auto;
+}
+.social-link {
+  margin: 20px;
+  text-decoration: none;
+}
+
+/* --------------------------------------------- */
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    min-width: calc(50% - 30px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50%-30px);
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 768) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin: 12px 0;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576) {
+  .container {
+    min-width: 90%;
+  }
+  .tabs-card {
+    max-width: 100%;
+  }
 }
