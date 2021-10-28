@@ -169,6 +169,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.slide-autunn {
+  background-image: url("../images/autumn1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-winter {
+  background-image: url("../images/winter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .slide:before {
   content: "";
   position: absolute;
@@ -504,5 +514,15 @@ body {
   }
   .tabs-card {
     max-width: 100%;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin: 12px 0;
+  }
+  .promo {
+    flex-wrap: wrap;
   }
 }
